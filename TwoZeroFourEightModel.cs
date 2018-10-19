@@ -18,7 +18,7 @@ namespace twozerofoureight
             // default board size is 4 
         }
 
-        public bool CheckGameover()
+        public bool CheckGameover() //Check game over when the score equal 2048
         {
             int size = boardSize;
             bool gg = false;
@@ -39,7 +39,7 @@ namespace twozerofoureight
 
             
         }
-        public bool Checkgameover2()
+        public bool Checkgameover2() // Check game over when the board fulled
         {
             for (int i = 0; i < boardSize; i++)
             {
@@ -251,7 +251,7 @@ namespace twozerofoureight
             HandleChanges(changed);
         }
 
-        public int GetScore()
+        public int GetScore() //Get the score in the board
         {
             int sum = 0;
             for (int i = 0; i < boardSize; i++)

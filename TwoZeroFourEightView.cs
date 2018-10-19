@@ -34,12 +34,12 @@ namespace twozerofoureight
 
         }
 
-        private void UpdateScore(int score)
+        private void UpdateScore(int score) // Update score to lblScore
         {
             lblScore.Text = Convert.ToString(score);
         }
 
-        private void UpdateGameOver(bool gg)
+        private void UpdateGameOver(bool gg) //Update game over
         {
             if (gg==true) {
 
@@ -122,7 +122,7 @@ namespace twozerofoureight
             controller.ActionPerformed(TwoZeroFourEightController.DOWN);
         }
 
-        private void TwoZeroFourEightView_KeyDown(object sender, KeyEventArgs e)
+        private void TwoZeroFourEightView_KeyDown(object sender, KeyEventArgs e) //make controll by keyboard
         {
             if(KeyPreview)
             switch (e.KeyData)
@@ -147,7 +147,7 @@ namespace twozerofoureight
             
         }
 
-        private void TwoZeroFourEightView_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        private void TwoZeroFourEightView_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e) //make controll by keyboard
         {
             switch (e.KeyCode)
             {
